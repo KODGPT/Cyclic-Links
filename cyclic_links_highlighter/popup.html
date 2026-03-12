@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Cyclic Links</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      padding: 16px;
+      min-width: 220px;
+      background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+      color: #212529;
+    }
+    h3 {
+      margin: 0 0 12px;
+      font-size: 18px;
+      text-align: center;
+      color: #007bff;
+      letter-spacing: 0.3px;
+    }
+    label {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #fff;
+      padding: 8px 12px;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      cursor: pointer;
+      margin-bottom: 12px;
+      transition: box-shadow 0.2s;
+    }
+    label:hover {
+      box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+    }
+    #enabled {
+      width: 18px;
+      height: 18px;
+      accent-color: #007bff;
+      cursor: pointer;
+    }
+    .info {
+      background-color: #fff;
+      padding: 10px 12px;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      text-align: center;
+      font-size: 14px;
+      margin-bottom: 12px;
+    }
+    #count {
+      font-weight: 600;
+      color: #007bff;
+    }
+    #rescan {
+      width: 100%;
+      padding: 10px 12px;
+      font-size: 14px;
+      border: none;
+      border-radius: 8px;
+      background-color: #007bff;
+      color: #fff;
+      cursor: pointer;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      transition: background-color 0.2s, box-shadow 0.2s;
+    }
+    #rescan:hover {
+      background-color: #0069d9;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    }
+  </style>
+</head>
+<body>
+  <h3>Cyclic Links</h3>
+
+  <label for="enabled">
+    <span>Включено</span>
+    <input type="checkbox" id="enabled">
+  </label>
+
+  <!-- <div class="info">
+    Найдено циклических ссылок: <span id="count">—</span>
+  </div>
+
+  <button id="rescan">Пересканировать</button> -->
+
+  <script src="popup.js"></script>
+</body>
+</html>
